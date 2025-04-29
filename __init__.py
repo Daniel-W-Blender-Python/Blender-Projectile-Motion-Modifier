@@ -213,12 +213,6 @@ def unregister():
     for c in _classes: unregister_class(c)
     del bpy.types.Scene.settings
     
-context = bpy.context
-scene = context.scene
-mytool = scene.settings
-
-mytool.is_projectile = 0
-
 
 if __name__ == "__main__":    
     register()
