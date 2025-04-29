@@ -120,8 +120,8 @@ class Settings(PropertyGroup):
     
     is_projectile : bpy.props.IntProperty(name = "is_projectile", default = 1, min = 0, max = 1)
 
-    frame_start : bpy.props.IntProperty(name = "Frame Start", min = 0, default = bpy.data.scenes[0].frame_start)
-    frame_end : bpy.props.IntProperty(name = "Frame End", min = 0, default = bpy.data.scenes[0].frame_end)
+    frame_start : bpy.props.IntProperty(name = "Frame Start", min = 0, default = 0)
+    frame_end : bpy.props.IntProperty(name = "Frame End", min = 0, default = 250)
     
     projectile_vector_x : bpy.props.FloatProperty(name = "Velocity X (m/s)", min = -100, max = 100, default = 0)
     projectile_vector_y : bpy.props.FloatProperty(name = "Velocity Y (m/s)", min = -100, max = 100, default = 0)
